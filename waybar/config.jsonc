@@ -1,4 +1,6 @@
 {
+    "spacing": 18,
+    "margin-top" : 10,
     //"layer": "bottom",
     //"modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": [
@@ -11,7 +13,8 @@
     //"modules-right": ["battery", "clock"],
     "clock": {
         "interval": 60,
-        "format": "{:%I:%M %p}"
+        "format": "{:%I:%M %p}",
+        "tooltip": false
     },
     "hyprland/workspaces": {
         "format": "{name}",
@@ -30,10 +33,10 @@
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
+        "format-bluetooth": "{volume}% ",
+        "format-muted": "",
         "format-icons": {
-            "headphone": "",
+            "headphone": "󰋋",
             "hands-free": "",
             "headset": "",
             "phone": "",
@@ -41,6 +44,7 @@
             "portable": "",
             "car": "",
             "default": [
+                "",
                 "",
                 ""
             ]
@@ -54,7 +58,14 @@
     "network": {
         "interface": "wlan0",
         "format": "{ifname}",
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} {icon}",
+        "format-icons":[
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
         "format-ethernet": "{ipaddr}/{cidr} 󰊗",
         "format-disconnected": "", //An empty format will hide the module.
         "tooltip-format": "{ifname} via {gwaddr} 󰊗",
