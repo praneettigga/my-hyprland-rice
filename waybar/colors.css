@@ -1,3 +1,5 @@
+/*
+ * Gruvbox Dark Theme
 @define-color bg0 #1d2021;
 @define-color bg1 #282828;
 @define-color bg2 #3c3836;
@@ -17,3 +19,31 @@
 @define-color grey0 #a89984;
 @define-color grey1 #928374;
 @define-color grey2 #7c6f64;
+*/
+
+/* Base (background layers) */
+@define-color bg0 #0f1416;   /* deepest shadow (almost black-teal) */
+@define-color bg1 #162022;   /* main background */
+@define-color bg2 #1e2c2f;   /* slightly lifted */
+@define-color bg3 #2a3a3e;   /* UI separation */
+@define-color bg4 #35494e;   /* hover / highlights */
+
+/* Foreground */
+@define-color fg #c7d4d6;    /* soft foggy white */
+@define-color fg_dim #9fb2b5;
+
+/* Accents (derived from image tones) */
+@define-color blue   #4f7c8a;  /* sky/fog blue */
+@define-color aqua   #3f6f73;  /* teal forest tone */
+@define-color green  #4f6b5b;  /* muted foliage */
+@define-color cyan   #6f9ea8;  /* brighter mist highlight */
+
+/* Minimal warm contrast (very subtle) */
+@define-color orange #a8744f;  /* optional (fallen leaves vibe) */
+@define-color red    #8a5a5a;  /* muted warning */
+
+/* Neutral greys */
+@define-color grey0 #7f8f91;
+@define-color grey1 #5e6e70;
+@define-color grey2 #3e4d50;
+
