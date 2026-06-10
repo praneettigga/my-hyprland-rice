@@ -25,3 +25,6 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 
 hl.env("HYPRSHOT_DIR", "/home/praneet/Pictures/Screenshots")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
+
+-- set AMD as the primary WLR device so Hyprland stops touching the NVIDIA GPU for compositing 
+hl.env("WLR_DRM_DEVICES", "/dev/dri/card2:/dev/dri/card1")

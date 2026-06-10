@@ -44,3 +44,8 @@ hl.layer_rule({
     blur = true,
     ignore_alpha = 0.5,
 })
+
+-- fix for black border on hyprshot
+hl.layer_rule({ match = { namespace = "hyprpicker" }, no_anim = true })
+hl.layer_rule({ match = { namespace = "selection" },  no_anim = true })
+
