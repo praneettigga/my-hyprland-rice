@@ -37,9 +37,9 @@ return function(apps)
     hl.bind(main_mod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
     hl.bind(main_mod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 
-    -- Scroll through workspaces with CTRL + main_mod + arrows
-    hl.bind(main_mod .. " + CTRL + right", hl.dsp.focus({ workspace = "e+1" }))
-    hl.bind(main_mod .. " + CTRL + left", hl.dsp.focus({ workspace = "e-1" }))
+    -- Scroll through workspaces with main_mod + Tab / Shift Tab
+    hl.bind(main_mod .. " + Tab", hl.dsp.focus({ workspace = "e+1" }))
+    hl.bind(main_mod .. " + SHIFT + Tab", hl.dsp.focus({ workspace = "e-1" }))
 
     -- Move/resize windows with main_mod + LMB/RMB and dragging
     hl.bind(main_mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })

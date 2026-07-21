@@ -49,3 +49,14 @@ hl.layer_rule({
 hl.layer_rule({ match = { namespace = "hyprpicker" }, no_anim = true })
 hl.layer_rule({ match = { namespace = "selection" },  no_anim = true })
 
+-- Noctalia blur fix
+hl.layer_rule({
+    name = "noctalia",
+    match = {
+        namespace = "noctalia-background-.*$",
+    },
+
+    ignore_alpha = 0.5,
+    blur = true,
+    blur_popups = true,
+})
