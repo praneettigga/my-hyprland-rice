@@ -8,10 +8,12 @@ return function(apps)
 
     hl.bind(main_mod .. " + Return", hl.dsp.exec_cmd(apps.terminal))
     hl.bind(main_mod .. " + Q", hl.dsp.window.kill())
-    hl.bind(main_mod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
+    -- hl.bind(main_mod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
     hl.bind(main_mod .. " + Escape", hl.dsp.exec_cmd(apps.session_menu))
+    hl.bind(main_mod .. " + M", hl.dsp.exec_cmd(apps.session_menu))
     hl.bind(main_mod .. " + E", hl.dsp.exec_cmd(apps.file_manager))
     hl.bind(main_mod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+    hl.bind(main_mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
     hl.bind(main_mod .. " + D", hl.dsp.exec_cmd("pkill " .. apps.menu .. " || " .. apps.menu))
     hl.bind(main_mod .. " + P", hl.dsp.window.pseudo())
     hl.bind(main_mod .. " + J", hl.dsp.layout("togglesplit"))
@@ -58,4 +60,8 @@ return function(apps)
     hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
     hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
     hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+
+
 end
+
+
